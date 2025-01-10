@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lời Chúc Đầu Xuân</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Dancing Script", serif;
+            text-align: center;
+            background-color: #C0020E;
+            background-image: url('background-tet-9.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .content {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: -40px;
+        }
+
+        .container {
+            margin: 20px;
+            font-size: 17px;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            color: rgb(255, 255, 142);
+            font-size: 3.5rem;
+            text-transform: capitalize;
+            line-height: 80px;
+            margin-top: 0;
+        }
+
+        #compliment-box {
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px dashed rgb(255, 255, 142);
+            border-radius: 10px;
+            background-color: #9f000b;
+            color: rgb(255, 255, 142);
+            font-size: 1.7em;
+            width: 80%;
+            max-width: 500px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+            line-height: 35px;
+            text-transform: capitalize;
+        }
+
+        button {
+            background-color: rgb(255, 255, 142);
+            color: #9f000b;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #9f000b;
+            color: rgb(255, 255, 142);
+            border: 2px solid rgb(255, 255, 142);
+        }
+
+        .decorerate {
+            margin: 0 auto;
+            width: 30%;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            font-size: 25px;
+        }
+
+        .rowbar {
+            width: 200px;
+            height: 3px;
+            background-color: rgb(255, 255, 142);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            #compliment-box {
+                font-size: 1em;
+                width: 80%;
+            }
+
+            button {
+                font-size: 0.9em;
+                padding: 10px 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            #compliment-box {
+                font-size: 0.9em;
+            }
+
+            button {
+                font-size: 0.8em;
+                padding: 10px 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #9f000b;">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="index.html"
+                style="font-size: 1.8rem; font-family: 'Times New Roman', serif; color: rgb(255, 255, 142) !important; margin-left: 20px;">
+                Lời Chúc Đầu Xuân
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white"
+                            style="font-size: 1.6rem; margin-right: 20px; color: rgb(255, 255, 142) !important;"
+                            href="chuctetsep.html">Chúc Sếp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white"
+                            style="font-size: 1.6rem; margin-right: 20px; color: rgb(255, 255, 142) !important;"
+                            href="chuctetbanbe.html">Chúc Bạn Bè</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white"
+                            style="font-size: 1.6rem; margin-right: 20px; color: rgb(255, 255, 142) !important;"
+                            href="chuctetnguoiyeu.html">Chúc Người Yêu</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="container">
+            <h1>Nhận một lời chúc tết <br>ngắn gọn và ý nghĩa</h1>
+            <div class="decorerate">
+                <div class="rowbar"></div>
+                <span>🌟</span>
+                <div class="rowbar"></div>
+            </div>
+            <div id="compliment-box">Nhấn nút để nhận lời chúc</div>
+            <button id="generate-btn">Nhận lời chúc</button>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const compliments = [
+            "Chúc bạn năm mới an khang thịnh vượng",
+            "Chúc mừng năm mới 2024",
+            "Chúc bạn một năm mới tràn đầy niềm vui và hạnh phúc: Vui trong sức khoẻ, trẻ trong tâm hồn, khôn trong lý tưởng và trưởng thành mọi lĩnh vực.",
+            "Năm mới chúc bạn sức khỏe nhiều. Bạc tiền rủng rỉnh thoải mái tiêu. Gia đình hạnh phúc bè bạn quý. Thanh thản vui chơi mọi buổi chiều.",
+            "Chúc bạn có một cái Tết ấm áp bên gia đình và những người thân yêu!",
+            "Chúc bạn một năm mới tràn đầy năng lượng và sức sống!",
+            "Chúc bạn gặt hái được nhiều thành công trong năm mới!",
+            "Chúc bạn luôn vui vẻ, hạnh phúc và bình an!",
+            "Chúc bạn một năm mới hết nước chấm, sức khỏe dồi dào, lắm gấu đuổi theo.",
+            "Một rổ tiếng cười, niềm vui và lời chúc ấm áp của tôi từ ngàn dặm xa xôi gửi tặng cho bà, bạn tốt của tôi.",
+            "Năm mới càng sung sức, không bực tức, không đau nhức, gấp đôi lợi tức, tiền vào thơm phức.",
+            "Chúc bạn sang năm mới nhiều tiền như nước, nhiều sức như voi, sung túc an khang.",
+            "Chúc bạn năm mới vạn sự hanh thông, tứ bề phát tài, công danh tấn tới, phú quý vinh hoa."
+        ];
+
+        const button = document.getElementById("generate-btn");
+        const complimentBox = document.getElementById("compliment-box");
+        button.addEventListener("click", () => {
+            const randomIndex = Math.floor(Math.random() * compliments.length);
+            complimentBox.textContent = compliments[randomIndex];
+        });
+    </script>
+</body>
+
+</html>
